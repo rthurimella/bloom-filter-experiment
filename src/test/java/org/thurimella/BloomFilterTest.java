@@ -1,7 +1,10 @@
+package org.thurimella;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.thurimella.util.BloomFilter;
 
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+
 public class BloomFilterTest {
 
     @Test
@@ -14,13 +17,13 @@ public class BloomFilterTest {
         bloomFilter.insertElement(30);
 
         // Check if elements are present
-        Assertions.assertTrue(bloomFilter.isPresent(10));
-        Assertions.assertTrue(bloomFilter.isPresent(20));
-        Assertions.assertTrue(bloomFilter.isPresent(30));
+        Assertions.assertTrue(bloomFilter.presentElement(10));
+        Assertions.assertTrue(bloomFilter.presentElement(20));
+        Assertions.assertTrue(bloomFilter.presentElement(30));
 
         // Check if non-existent elements are not present
-        Assertions.assertFalse(bloomFilter.isPresent(40));
-        Assertions.assertFalse(bloomFilter.isPresent(50));
+        Assertions.assertFalse(bloomFilter.presentElement(40));
+        Assertions.assertFalse(bloomFilter.presentElement(50));
     }
 
     @Test
@@ -33,8 +36,8 @@ public class BloomFilterTest {
         bloomFilter.insertElement(30);
 
         // Check if false positives are minimal
-        Assertions.assertFalse(bloomFilter.isPresent(40));
-        Assertions.assertFalse(bloomFilter.isPresent(50));
+        Assertions.assertFalse(bloomFilter.presentElement(40));
+        Assertions.assertFalse(bloomFilter.presentElement(50));
     }
 }
 

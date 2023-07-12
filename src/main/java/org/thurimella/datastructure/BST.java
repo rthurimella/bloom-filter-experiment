@@ -13,7 +13,7 @@ public class BST {
         return found(root, x);
     }
 
-    private Node insert(Node node, int x) {
+    public Node insert(Node node, int x) {
         if (node == null) {
             return new Node(x);
         } else if (x < node.data) {
