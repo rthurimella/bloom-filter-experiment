@@ -27,4 +27,5 @@ The code separates different concerns into
  and maintainability.
 
  While the provided code does not adhere to a specific architectural 
- pattern like MVC
+ pattern like model-view-control (MVC), it does take into account the 
+ above listed best practices in software development 

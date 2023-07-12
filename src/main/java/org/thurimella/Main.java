@@ -81,6 +81,7 @@ public class Main {
         }
         endTime = System.nanoTime();
         elapsedTime = (endTime - startTime) / 1_000_000.0;
+
         System.out.println("Search *with* Bloom Filter took: " + elapsedTime + " milliseconds");
         System.out.println();
 
