@@ -18,10 +18,10 @@ This project demonstrates the usage of a Bloom filter and binary search tree (BS
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-project-name.git
-   cd your-project-name
+   https://github.com/rthurimella/bloom-filter-experiment.git
+   cd bloom-filter-experiment
    mvn clean install
-   java -jar target/your-project-name.jar
+   java -jar target/bloom-filter-experiment.jar
 
 2. To run unit tests:
    ```bash
