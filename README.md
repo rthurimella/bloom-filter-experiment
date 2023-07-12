@@ -21,7 +21,7 @@ This project demonstrates the usage of a Bloom filter and binary search tree (BS
    https://github.com/rthurimella/bloom-filter-experiment.git
    cd bloom-filter-experiment
    mvn clean install
-   java -jar target/bloom-filter-experiment.jar
+   java -jar target/bloom-filter-experiment-1.0.0.jar
 
 2. To run unit tests:
    ```bash
