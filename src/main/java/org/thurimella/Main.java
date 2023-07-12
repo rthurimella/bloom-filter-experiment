@@ -16,6 +16,7 @@ public class Main {
     public static void main(String[] args) {
         // Create BST and Bloom Filter
         BST bst = new BST();
+        // Create another BST to see the set creation time without the filter
         BST bstWithoutFilter = new BST();
 
         BloomFilter filter = new BloomFilter(FILTER_SIZE_BITS);
