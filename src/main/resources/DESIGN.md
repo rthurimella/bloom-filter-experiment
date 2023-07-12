@@ -1,22 +1,27 @@
+# Bloom Filter Experiment
+
 we can identify certain design principles and patterns that are present 
 in the code:
 
-1. Separation of Concerns: The code separates different concerns into 
+## Separation of Concerns 
+The code separates different concerns into 
  separate classes, such as the BloomFilter, BST, and RandomUtils 
  classes. Each class has a specific responsibility and encapsulates 
  related functionality.
 
- 2. Single Responsibility Principle (SRP): Each class has a single 
- responsibility and focuses on performing specific tasks. For example, 
- the BloomFilter class is responsible for creating and managing a 
- Bloom filter, while the BST class handles operations related to 
- the binary search tree.
+## Single Responsibility Principle (SRP) 
+ Each class has a single responsibility and focuses on performing 
+ specific tasks. For example, the BloomFilter class is responsible 
+ for creating and managing a Bloom filter, while the BST class 
+ handles operations related to the binary search tree.
 
- 3. Encapsulation: The classes encapsulate their internal state and 
+## Encapsulation 
+ The classes encapsulate their internal state and 
  provide methods to interact with that state, promoting encapsulation 
  and information hiding.
 
- 4. Modular Design: The code is organized into multiple files, 
+## Modular Design 
+ The code is organized into multiple files, 
  each representing a distinct class with a specific purpose. 
  This modular approach improves code organization, readability, 
  and maintainability.
