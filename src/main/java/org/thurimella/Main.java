@@ -1,8 +1,6 @@
 package org.thurimella;
 
 import org.thurimella.datastructure.BST;
-import org.thurimella.model.Node;
-import org.thurimella.util.RandomUtils;
 import org.thurimella.util.BloomFilter;
 
 import java.util.Random;
