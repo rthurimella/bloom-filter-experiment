@@ -1,7 +1,8 @@
 # Bloom Filter Experiment
 
-Consider a set S that is stored in a database. We would like to support membership queries, i.e., whether x ∈ S. 
-When S is too large to fit in main memory, a Bloom filter can be a good data structure to speed up membership queries. 
+Use Case: Support membership queries, i.e., whether x ∈ S, where S is too large to fit in main 
+memory, e.g. checking availability of a username during registration. 
+A Bloom filter can be a good data structure to speed up membership queries. 
 The Bloom filter represents S and answers queries with high probability. For the query x ∈ S, if x ∉ S, the Bloom 
 filter definitively answers no. However, if the Bloom filter answers yes, it is possible that x ∉ S, and a subsequent 
 database lookup is required to confirm membership. This situation (called <em> false positive </em>) 
