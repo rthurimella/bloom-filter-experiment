@@ -26,7 +26,7 @@ In this code, instead of storing S in a database, we will store it in a binary s
 
 1. Clone the repository:
    ```bash
-   https://github.com/rthurimella/bloom-filter-experiment.git
+   git clone https://github.com/rthurimella/bloom-filter-experiment.git
    cd bloom-filter-experiment
    mvn clean install
    java -jar target/bloom-filter-experiment-1.0.0.jar
