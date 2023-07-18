@@ -31,6 +31,7 @@ public class Main {
         long startTime, endTime;
         double elapsedTime;
 
+        //create the set without Bloom filter
         startTime = System.nanoTime();
         for (int i = 0; i < NUM_ELEMENTS; i++) {
             int randomInteger = random.nextInt(MAX_KEY + 1);
@@ -41,6 +42,7 @@ public class Main {
         System.out.println();
         System.out.println("Set creation *without* Bloom Filter took: " + elapsedTime + " milliseconds");
 
+        //create the set along with the Bloom filter
         startTime = System.nanoTime();
         for (int i = 0; i < NUM_ELEMENTS; i++) {
             int randomInteger = random.nextInt(MAX_KEY + 1);
